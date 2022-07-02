@@ -31,6 +31,7 @@
        var password = document.getElementById("passwordBox");
        var passwordText = password.value;
        if(passwordText == "Ernest300") {
+        window.location.href = 'home.html';
         return true;
        }
        alert("Access denied! Incorrect password!");
@@ -41,7 +42,7 @@
          <div>
              <center><p style="color:white;">enter authorization password:</p></center>
              <center><input id="passwordBox" type="password"/></center>
-             <a <center><href="home.html" button onclick="return checkPassword();" class="button button4">Submit</button></center></a>
+             <center><href="home.html" button onclick="return checkPassword();" class="button button4">Submit</button></center>
          </div>
 
     </body>
