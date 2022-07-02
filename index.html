@@ -1,34 +1,56 @@
-<!DOCTYPE html>
 <html>
-<head>
- <title>Password</title>
- <style>
-  body {
-   background-color: lightblue;
-   padding: 30px;
-  }
- </style>
- <script>
-  function checkPassword() {
-   var password = document.getElementById("passwordBox");
-   var passwordText = password.value;
-   if(passwordText == "Aj9R5^£") {
-    return true;
-   }
-      
-   <!--The password is Aj9R5^£-->
-      
-   alert("Access denied! Incorrect password!");
-   return false;
-   }
- </script>
-</head>
-<body>
- <p style="font-size: 30pt;">J0K3RS-L4UGH</p>
- <p>Please enter the password to view this website.</p>
- <p>Password:<input id="passwordBox" type="password"/></p>
- <a href="home.html" onclick="return checkPassword();">
-  Click here to submit password and view website
- </a>
-</body>
+    <style>
+        p {
+            font-family: consolas;
+        }
+
+        .button {
+          background-color: #595959;
+          border: none;
+          color: white;
+          padding: 5px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 30px 2px;
+          cursor: pointer;
+          font-family: consolas;
+        }
+
+        </style>
+     <title>Password</title>
+     <style>
+      body {
+       background-color: lightblue;
+       padding: 30px;
+      }
+     </style>
+     <script>
+      function checkPassword() {
+       var password = document.getElementById("passwordBox");
+       var passwordText = password.value;
+       if(passwordText == "Ernest300") {
+        return true;
+       }
+       alert("Access denied! Incorrect password!");
+       return false;
+       }
+     </script>
+    <body style="background-color:black;">
+            <center><img src="scp.png" height="600" width="1100"></center>
+         <div>
+             <center><p style="color:white;">enter authorization password:</p></center>
+             <center>Password:<input id="passwordBox" type="password"/></center>
+             <center><button onclick="return1();" class="button button4">Submit</button></center>
+             <script>
+                    function return1()
+                    {
+                        window.location.href = 'home.html';
+                        return false;
+                    }
+             </script>
+         </div>
+
+    </body>
 </html>
